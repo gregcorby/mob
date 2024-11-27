@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Machine Scene Generator</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Dream Scene Generator</h1>
+            <p>Create cinematic scenes from your images</p>
+        </header>
+
+        <main>
+            <div class="upload-container">
+                <div class="image-upload">
+                    <label for="image1" class="preview-box">
+                        <input type="file" accept="image/*" id="image1" class="file-input">
+                        <div class="upload-placeholder">
+                            <span>Upload First Image</span>
+                            <small>Click or drag image here</small>
+                        </div>
+                    </label>
+                    
+                    <label for="image2" class="preview-box">
+                        <input type="file" accept="image/*" id="image2" class="file-input">
+                        <div class="upload-placeholder">
+                            <span>Upload Second Image</span>
+                            <small>Click or drag image here</small>
+                        </div>
+                    </label>
+                </div>
+
+                <button id="generate-btn" class="primary-btn" disabled>Generate Scene</button>
+            </div>
+
+            <div id="progress" class="progress-container hidden">
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <p class="progress-text">Processing your scene...</p>
+            </div>
+        </main>
+    </div>
+
+    <script src="src/app.js"></script>
+</body>
+</html>
